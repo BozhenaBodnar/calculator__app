@@ -1,33 +1,44 @@
-# Getting Started with Create React App
+# Services Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a calculator application that allows users to select a year and choose services they want to purchase from a telecom company. The application calculates the final price of the selected services, taking into account any applicable discounts or package deals.
 
-## Available Scripts
+The data for the services is loaded from an external source (e.g., a JSON file), and the application is designed to be easily customizable and extensible for future updates.
 
-In the project directory, you can run:
+##  Demo:
 
-### `npm start`
+[DEMO LINK](https://<BozhenaBodnar>.github.io/calculator__app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  -  Select a year: Users can choose a specific year from the available options.
+  -  Select services: Users can select the services they wish to purchase from the available options.
+  -  Calculate final price: The application calculates the final price of the selected services, including any applicable discounts or package deals.
+  -  Dynamic pricing: The prices of services vary depending on the selected year.
+  -  Package deals: Users can benefit from package deals that offer discounted prices for combined services.
+  -  Dependency handling: Certain services have dependencies, and the application ensures that users cannot add dependent services without selecting the required ones.
 
-### `npm test`
+## Data Model
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The data model for the services includes the following properties:
 
-### `npm run build`
+  -  name: The name of the service.
+  -  prices: An array of objects containing the prices for different years.
+  -  packages: An optional array of strings representing the package(s) the service belongs to.
+  -  content: An optional array of strings representing the dependent service(s) required by this service.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  -  React: JavaScript library for building user interfaces.
+  -  SaSS: Styling the application components.
+  -  JSON: Data source for the services and pricing information.
+  -  JSX: Syntax extension for JavaScript used in React components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+
+  -  Select a year from the dropdown menu.
+  -  Choose the desired services by clicking the "ADD" button next to each service. If a service is already selected, click the "CANCEL" button to remove it.
+  -  The total price of the selected services will be displayed in the "To pay" section.
+  -  To reset the selection and start over, click the "CANCEL" button in the "To pay" section.
 
 ### `npm run eject`
 

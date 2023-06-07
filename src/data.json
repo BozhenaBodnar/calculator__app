@@ -1,0 +1,64 @@
+{
+  "services": [
+    {
+      "name": "Internet",
+      "prices": [
+        { "year": 2023, "price": 39 },
+        { "year": 2024, "price": 49 },
+        { "year": 2025, "price": 59 }
+      ],
+      "packages": ["Package «Internet + TV»", "Package «Subscription to the Internet + Phone»"],
+      "content": []
+    },
+    {
+      "name": "TV",
+      "prices": [
+        { "year": 2023, "price": 49 },
+        { "year": 2024, "price": 49 },
+        { "year": 2025, "price": 59 }
+      ],
+      "packages": ["Package «Internet + TV»"],
+      "content": []
+    },
+    {
+      "name": "Package «Internet + TV»",
+      "prices": [
+        { "year": 2023, "price": 79 },
+        { "year": 2024, "price": 89 },
+        { "year": 2025, "price": 99 }
+      ],
+      "packages": ["Internet", "TV"],
+      "content": ["Internet", "TV"]
+    },
+    {
+      "name": "Package «Subscription to the Internet + Phone»",
+      "prices": [
+        { "year": 2023, "price": 64 },
+        { "year": 2024, "price": 64 },
+        { "year": 2025, "price": 64 }
+      ],
+      "packages": [],
+      "content": ["Internet", "Phone subscription"]
+    },
+    {
+      "name": "Phone subscription",
+      "prices": [
+        { "year": 2023, "price": 29 },
+        { "year": 2024, "price": 29 },
+        { "year": 2025, "price": 29 }
+      ],
+      "packages": ["Package «Subscription to the Internet + Phone»"],
+      "content": []
+    },
+    {
+      "name": "Set-top 4K",
+      "prices": [
+        { "year": 2023, "price": 29 },
+        { "year": 2024, "price": 29 },
+        { "year": 2025, "price": 29 }
+      ],
+      "packages": [],
+      "content": []
+    }
+  ]
+}

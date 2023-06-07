@@ -1,0 +1,109 @@
+.calculator {
+  margin-left: 20px;
+  position: relative;
+
+  &__choose-year {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 20px;
+  }
+
+  &__years {
+    border-color: rgb(43, 43, 105);
+    color: rgb(43, 43, 105);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 4px 8px;
+    font-size: 15px;
+  }
+
+  &__value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    max-width: 700px;
+    margin-bottom: 5px;
+    padding: 0 20px;
+
+    background-color: rgba(137, 43, 226, 0.129);
+  
+
+    &-added,
+    &:hover {
+      background-color: rgba(137, 43, 226, 0.282);
+      
+      transition: 400ms;
+    }
+  } 
+
+  &__value-title {
+    color: aliceblue;
+    font-size: 18px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+  }
+
+  &__value-button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    height: 30px;
+    padding: 10px;
+
+    background-color: rgb(43, 43, 105);
+    border: 1px solid white;
+    color: white;
+
+    cursor: pointer;
+
+    &-added,
+    &:hover {
+      color: rgb(43, 43, 105);
+      background-color: white;
+      border: 1px solid rgb(43, 43, 105);
+
+      transition: 400ms;
+    }
+
+    &-added {
+      cursor: default;
+    }
+  }
+
+  &__sum-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    padding: 0 20px;
+    background-color: rgba(98, 77, 203, 0.814);
+    animation: animateField 2s linear infinite;
+  }
+}
+
+@keyframes animateField {
+  0% {
+    background-color: rgb(40, 28, 109);
+  }
+  33% {
+    background-color: rgb(51, 51, 130);
+  }
+  66% {
+    background-color: rgb(99, 82, 169);
+  }
+  100% {
+    background-color: rgb(51, 51, 130);
+  }
+} 
