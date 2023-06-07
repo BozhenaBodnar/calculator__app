@@ -6,7 +6,7 @@ The data for the services is loaded from an external source (e.g., a JSON file),
 
 ##  Demo:
 
-[DEMO LINK](https://<BozhenaBodnar>.github.io/calculator__app/)
+[DEMO LINK](https://bozhenabodnar.github.io/calculator__app/)
 
 ## Features
 
